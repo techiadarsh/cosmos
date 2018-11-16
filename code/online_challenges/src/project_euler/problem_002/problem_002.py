@@ -1,20 +1,37 @@
-def main():
-    # Variables to keep track of Fibonacci numbers
-    p2 = 0
-    p1 = 0
-    current = 1
-    total = 0
-
-    while current <= 4000000:
-        # Add even fibonacci numbers
-        total += current if current % 2 == 0 else 0
-
-        # Update fibonacci numbers
-        p2 = p1
-        p1 = current
-        current = p2 + p1
-
-    print(total)
-
-if __name__ == '__main__':
-    main()
+def febno():
+    a=0
+    b=1
+    d=0
+    print(a)
+    print(b)
+    while(d<40000):#to print the febno series upto 40000 value
+        z=a+b
+        print(z)
+        a=b
+        b=z
+        d=d+z          
+febno()
+    
+#To print the series upto a fixed number of elements
+def febno(n):
+    a=0
+    b=1 
+    count=0
+    if n==1:
+        print(a)
+    elif(n==1):
+        print(b)
+    else:
+        print(a)
+        print(b)
+        while(n>count):
+            z=a+b 
+            print(z)
+            a=b
+            b=z
+            count+=1    
+febno(int(input("enter the number you want to print the series")
+    
+    
+    
+    
